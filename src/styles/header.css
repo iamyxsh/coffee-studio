@@ -1,0 +1,86 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.header .logo {
+	width: 10rem;
+	height: 10rem;
+}
+
+.header .menu {
+	display: flex;
+	width: 15rem;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .menu .nav {
+	width: 10rem;
+	display: flex;
+	align-items: center;
+}
+
+.header .menu h1 {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.header .burger {
+	width: 2rem;
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	margin: 0 1rem;
+}
+
+.header .line1,
+.header .line2,
+.header .line3 {
+	width: 2rem;
+	height: 0.2rem;
+	background-color: black;
+	transition: all 0.8s ease-in;
+}
+
+.header .bag {
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-9px, 6px);
+	transition: all 0.8s ease-in;
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-9px, -6px);
+	transition: all 0.8s ease-in;
+}
+
+.header-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 10;
+	background-color: black;
+}
+
+.header-menu .line1,
+.header-menu .line2,
+.header-menu .line3 {
+	background-color: white;
+}
